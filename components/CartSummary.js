@@ -59,7 +59,7 @@ export default function CartSummary() {
 					type="text"
 					value={discountCode}
 					onChange={(e) => setDiscountCode(e.target.case`Value`)}
-					placeholder="Enter discount code"
+					placeholder="Enter discount code (SAVE20, SUMMER10)"
 					className="w-full p-2 border rounded"
 				/>
 				<button
