@@ -23,13 +23,13 @@ export default function HomePage() {
 
 	return (
 		<div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-[50px]">
-			<h1 className="text-2xl font-bold mb-4">Welcome, {user.displayName}!</h1>
-			<button
+			{/* <h1 className="text-2xl font-bold mb-4">Welcome, {user.displayName}!</h1> */}
+			{/* <button
 				onClick={handleSignOut}
 				className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
 			>
 				Sign Out
-			</button>
+			</button> */}
 
 			<div className="bg-gray-100">
 				<h1 className="text-3xl font-bold mb-8">Our Products</h1>
