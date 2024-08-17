@@ -1,3 +1,10 @@
+import AuthWrapper from './AuthWrapper';
+import HomePage from './HomePage';
+
 export default function Home() {
-	return <div>WOrking</div>;
+  return (
+    <AuthWrapper>
+      <HomePage />
+    </AuthWrapper>
+  );
 }
