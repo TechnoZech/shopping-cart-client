@@ -26,17 +26,17 @@ export default function RootLayout({ children }) {
 		<div className="min-h-screen flex flex-col">
 			<header className="bg-blue-600 text-white p-4">
 				<nav className="container mx-auto flex justify-between items-center">
-					<Link href="/" className="text-2xl font-bold">
+					<Link href="/" className="text-md lg:text-2xl font-bold">
 						E-Shop
 					</Link>
 					{user && (
 						<div className="flex items-center justify-center gap-5">
-							<h1 className="text-md font-medium">
-								Welcome, {user.displayName}!
+							<h1 className="text-sm lg:text-md font-medium">
+								Hi, {user.displayName}!
 							</h1>
 							<button
 								onClick={handleSignOut}
-								className="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded"
+								className="bg-red-500 hover:bg-red-600 text-white font-bold text-sm lg:text-md py-1 px-3 rounded"
 							>
 								Sign Out
 							</button>
