@@ -4,41 +4,41 @@
         "name": "iphone 1",
         "price": 100,
         "description": "iphone 1 128GB",
-        "image": "/images/product01.webp" 
+        "image": "/images/product01.jpg" 
     },
     {
         "id": 2,
         "name": "iphone 2",
         "price": 200,
         "description": "iphone 2 128GB",
-        "image": "/images/product02.webp" 
+        "image": "/images/product02.jpg" 
     },
     {
         "id": 3,
         "name": "iphone 3",
         "price": 300,
         "description": "iphone 3 128GB",
-        "image": "/images/product03.webp" 
+        "image": "/images/product03.jpg" 
     },
     {
         "id": 4,
         "name": "iphone 4",
         "price": 400,
         "description": "iphone 4 128GB",
-        "image": "/images/product04.webp" 
+        "image": "/images/product04.jpg" 
     },
     {
         "id": 5,
         "name": "iphone 5",
         "price": 500,
         "description": "iphone 5 128GB",
-        "image": "/images/product05.webp" 
+        "image": "/images/product05.jpg" 
     },
     {
         "id": 6,
         "name": "iphone 6",
         "price": 600,
         "description": "iphone 1 128GB",
-        "image": "/images/product06.webp" 
+        "image": "/images/product06.jpg" 
     }
 ]

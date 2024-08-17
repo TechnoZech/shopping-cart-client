@@ -1,11 +1,12 @@
-// components/CartSummary.js
 import { useState } from "react";
 import { useCart } from "../utils/cartUtils";
+import { useRouter } from "next/navigation";
 
 export default function CartSummary() {
 	const { cartItems } = useCart();
 	const [discountCode, setDiscountCode] = useState("");
 	const [appliedDiscount, setAppliedDiscount] = useState(null);
+	const router = useRouter();
 
 	const subtotal = cartItems.reduce(
 		(total, item) => total + item.price * item.quantity,
@@ -32,6 +33,10 @@ export default function CartSummary() {
 		}
 	};
 
+	const handleCheckout = () => {
+		router.push("/checkout");
+	};
+
 	return (
 		<div className="bg-gray-100 p-6 rounded-lg">
 			<h2 className="text-2xl font-bold mb-4">Cart Summary</h2>
@@ -53,7 +58,7 @@ export default function CartSummary() {
 				<input
 					type="text"
 					value={discountCode}
-					onChange={(e) => setDiscountCode(e.target.value)}
+					onChange={(e) => setDiscountCode(e.target.case`Value`)}
 					placeholder="Enter discount code"
 					className="w-full p-2 border rounded"
 				/>
@@ -64,7 +69,10 @@ export default function CartSummary() {
 					Apply Discount
 				</button>
 			</div>
-			<button className="w-full bg-green-500 text-white py-3 rounded hover:bg-green-600">
+			<button
+				onClick={handleCheckout}
+				className="w-full bg-green-500 text-white py-3 rounded hover:bg-green-600"
+			>
 				Proceed to Checkout
 			</button>
 		</div>
